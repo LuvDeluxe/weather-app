@@ -2,9 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Today</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7f98401308.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </head>
 <body>
+<div class="container">
+    <div class="search-box">
+        <i class="fa-solid fa-map-pin"></i>
+        <input type="text" id="search" placeholder="Search location ...">
+        <button i class="fa-solid fa-magnifying-glass-location"></button>
+    </div>
+    <div class="404">
+        <img src="images/404.png" alt="not-found">
+        <p>The location is not found. Check your spelling !</p>
+    </div>
+    <div class="weather">
+        <img src="" alt="weather image">
+        <p class="temp"></p>
+        <p class="desc"></p>
+    </div>
+    <div class="details">
+        <div class="humidity">
+            <i class="fa-solid fa-droplet"></i>
+            <div class="text">
+                <span></span>
+                <p>Humidity</p>
+            </div>
+        </div>
 
+        <div class="windspeed">
+            <i class="fa-solid fa-wind"></i>
+            <div class="text">
+                <span></span>
+                <p>Wind speed</p>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
