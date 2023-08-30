@@ -12,3 +12,160 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.container {
+    position: relative;
+    width: 450px;
+    padding: 35px;
+    background: lightgray;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: 0.3s ease-in;
+    font-family: 'Serif';
+    height: 120px;
+}
+
+.search-box {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box input {
+    padding: 3px 16px;
+    border-radius: 7px;
+    font-size: 1.2em;
+    padding-left: 4em;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-left: 0.6em;
+    margin-right: 0.7em;
+}
+
+.search-box input::placeholder {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.search-box button {
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+    color: #06283D;
+    background-color: lightgray;
+    padding: 0;
+    transition: 0.3s ease-in;
+    font-size: 1.4em;
+    background-color: white;
+    border-radius: 50%;
+    padding: 13px;
+}
+
+#search-box, button:hover {
+   color: #fff;
+    background-color: black;
+    transition: all .6s ease;
+}
+
+.search-box i {
+    font-size: 1.6em;
+}
+
+::placeholder {
+    color: black;
+}
+
+.weather {
+    text-align: center;
+}
+
+.weather img {
+    width: 50%;
+    margin-top: 2em;
+}
+
+.weather .temp {
+    position: relative;
+    font-weight: 600;
+    font-size: 2.3rem;
+    margin-top: 25px;
+    text-transform: capitalize;
+}
+
+.weather .desc {
+    font-size: 2.3rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.humidity {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.windspeed {
+    display: flex;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.text {
+    margin-left: 15px;
+}
+
+.details span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.details p {
+    font-family: 'Sans';
+    font-weight: 400;
+}
+
+.notfound {
+    text-align: center;
+    margin-top: 45px;
+    scale: 0;
+    opacity: 0;
+    display: none;
+    width: 100%;
+}
+
+.notfound img{
+    width: 70%;
+}
+
+.notfound p {
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.weather, .details {
+    scale: 0;
+    opacity: 0;
+}
+
+.fade-in {
+    animation: 0.6s fadeIn forwards;
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeIn {
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
