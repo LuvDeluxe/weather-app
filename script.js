@@ -53,6 +53,8 @@ search.addEventListener('click', () => {
             case 'Snow':
                 weatherImage.src = 'images/snow.png';
                 break;
+            default:
+                weatherImage.src = '';
         }
     })
 });
