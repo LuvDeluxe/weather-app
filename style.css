@@ -11,23 +11,24 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:
 }
 
 .container {
     position: relative;
-    width: 450px;
-    padding: 35px;
+    width: 29.75rem;
+    padding: 2.1875rem;
     background: lightgray;
     overflow: hidden;
     border-radius: 15px;
     transition: 0.3s ease-in;
     font-family: 'Serif';
     height: 120px;
+    font-weight: lighter !important;
 }
 
 .search-box {
-    width: 100%;
+    width: 50px;
+    height: 50px;
     height: min-content;
     display: flex;
     align-items: center;
@@ -42,7 +43,7 @@ body {
     font-weight: 600;
     text-transform: capitalize;
     margin-left: 0.6em;
-    margin-right: 0.7em;
+    margin-right: 0.6em;
     text-align: center;
 }
 
