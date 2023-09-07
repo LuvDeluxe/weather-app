@@ -20,22 +20,22 @@ search.addEventListener('click', () => {
             return;
         }
 
+        weather.classList.add('fadeIn');
+        container.style.height = '600px';
         notFound.style.display = 'none';
         notFound.classList.remove('fadeIn');
+        weather.style.display = 'block';
+        details.style.display = 'flex';
 
         const weatherImage = document.querySelector('.weatherimg');
         const temperature = document.querySelector('.temp');
         const description = document.querySelector('.desc');
         const wind = document.querySelector('.windspeed span');
         const humidity = document.querySelector('.humidity span');
-
         temperature.innerText = `${json.main.temp} °C`;
         description.innerText = `${json.weather[0].main}`;
         humidity.innerText = `${json.main.humidity}%`;
         wind.innerText = `${json.wind.speed} m/s`;
-
-        weather.classList.add('fadeIn');
-        container.style.height = '600px';
 
         switch (json.weather[0].main) {
             case 'Clear':
